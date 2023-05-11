@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/mushPhoto"
+        android:layout_width="118dp"
+        android:layout_height="111dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameMush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Название"
+        app:layout_constraintBottom_toTopOf="@+id/poisoned"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mushPhoto"
+        app:layout_constraintTop_toTopOf="@+id/mushPhoto" />
+
+    <TextView
+        android:id="@+id/poisoned"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Ядовит или нет"
+        app:layout_constraintBottom_toBottomOf="@+id/mushPhoto"
+        app:layout_constraintStart_toEndOf="@+id/mushPhoto"
+        app:layout_constraintTop_toTopOf="@+id/mushPhoto" />
+
+    <TextView
+        android:id="@+id/occurent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Как часто встречается"
+        app:layout_constraintBottom_toBottomOf="@+id/mushPhoto"
+        app:layout_constraintStart_toEndOf="@+id/mushPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/poisoned" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
